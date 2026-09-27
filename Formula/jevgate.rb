@@ -5,23 +5,23 @@ class Jevgate < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.23.0/jevgate-0.23.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5ab49bbf163d43393a58ea7496a9c249bc89bcd8087becf159a0a723db8a2d43"
+      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.23.1/jevgate-0.23.1-aarch64-apple-darwin.tar.gz"
+      sha256 "d079c384c7c8dac913624e4ed9bf5d0a033b752595bfbd8950a20bb12385ac51"
     end
     on_intel do
-      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.23.0/jevgate-0.23.0-x86_64-apple-darwin.tar.gz"
-      sha256 "80e735883538700f8b761ed356c80feed55c9d93a03a61bc4c9293c7f4f51fb3"
+      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.23.1/jevgate-0.23.1-x86_64-apple-darwin.tar.gz"
+      sha256 "4e83026154ffbbddbcb97afd005b31c46498c41370fc35d77a8fa2fe1bc19bfd"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.23.0/jevgate-0.23.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d1611954bb3e1dc3fa8e6f2e76338e0ded37bf4a775aecf982e45967a0d1c047"
+      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.23.1/jevgate-0.23.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "0e85afd706f1b8ef51ffb59b4a8b4bb1fe19b03a6273754f020f87b717d89ce9"
     end
     on_intel do
-      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.23.0/jevgate-0.23.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e82fb5d478837f469a69d96720fc08240795866f9e55e2992f95e90a29aa5b1d"
+      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.23.1/jevgate-0.23.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "79849f3c6904616763402cf88f1cfe3dd09aa3543b10f631c9d4311a3a77e80e"
     end
   end
 
