@@ -5,23 +5,23 @@ class Jevgate < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.25.0/jevgate-0.25.0-aarch64-apple-darwin.tar.gz"
-      sha256 "2aa791d8928db758683939ea27ea3872e8d826eae55d89d6528b64d25d0e6c8e"
+      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.30.0/jevgate-0.30.0-aarch64-apple-darwin.tar.gz"
+      sha256 "f4f10832d6c5a510577e54782acc82b9ead8f4a3272c9158f92dbe73cc20b77a"
     end
     on_intel do
-      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.25.0/jevgate-0.25.0-x86_64-apple-darwin.tar.gz"
-      sha256 "a4085f0ac89b87b7a365a8867c3aca76ec264a3baab6f1dcdcee6e67def6dc40"
+      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.30.0/jevgate-0.30.0-x86_64-apple-darwin.tar.gz"
+      sha256 "57b412b416027c1b9ad56c378c5b201983abe50678ab04d18ea40763a6312e33"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.25.0/jevgate-0.25.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "539251dc97ee603ab2c3ef28ca73dd8aea148eed3836b7d0fa23087c7fb151ac"
+      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.30.0/jevgate-0.30.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "35a2a20b042796784ed612186008c04a94e45097ff3c21929b3cb79996408796"
     end
     on_intel do
-      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.25.0/jevgate-0.25.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "57638534fa5500101bb604585b5740c9212d91659a2a61e918fe706ca0fc4256"
+      url "https://github.com/Tech-Byte-Frontier/jevgate/releases/download/v0.30.0/jevgate-0.30.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "fbbb3b667fc3b91aff98f61bd3cba02ba5f17703f71b669d680309c58c606df1"
     end
   end
 
@@ -30,7 +30,7 @@ class Jevgate < Formula
     generate_completions_from_executable(bin/"jevgate", "completions")
     man1.mkpath
     (man1/"jevgate.1").write Utils.safe_popen_read(bin/"jevgate", "man")
-    %w[auth check baseline rules init serve mcp completions man].each do |command|
+    %w[auth check baseline rules init serve mcp hook completions man].each do |command|
       (man1/"jevgate-#{command}.1").write Utils.safe_popen_read(bin/"jevgate", "man", command)
     end
   end
